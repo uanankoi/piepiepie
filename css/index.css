@@ -1,0 +1,113 @@
+body{
+    /* background-image: linear-gradient(45deg,pink,teal); */
+    /* background-color: darksalmon; */
+    background-color: rgb(8, 199, 199);
+}
+/*  */
+.bar{
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(16, 201, 201);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 6px slategrey;
+    z-index: 100;
+}
+/*  */
+.wrap{
+    width: 100%;
+    background-color: rgb(8, 199, 199);
+    /* height: 100vh; */
+    /* background-color: darksalmon; */
+    /* background-image: linear-gradient(45deg,rgb(160, 89, 101) ,rgb(8, 199, 199)); */
+
+}
+.title{
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+    padding: 50px 0;
+}
+.allPie{
+    /* border: darkorange 1px solid; */
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    /* background-color: rgb(175, 175, 175); */
+}
+.allPie h1{
+    width: 100%;
+}
+.col4{
+    width: 30%;
+    margin: 0 1%;
+    height: 100%;
+    /* background-image: linear-gradient(45deg,pink,teal); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pie{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(32, 139, 182);
+    background-image: linear-gradient(90deg,transparent 50%, tomato 0);
+    position: relative;
+    margin: 5px;
+}
+.pieHalf{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    
+}
+.pieLeft{
+    background-color: inherit;
+    transform-origin: right;
+    border-radius: 100% 0% 0% 100% / 50%;
+}
+.pieRight{
+    background-color: inherit;
+    transform-origin: left;
+    margin-left: 50%;
+    border-radius: 0% 100% 100% 0% / 50%;
+}
+.pieNum{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255);
+    font-size: 1.5rem;
+    /* text-align: center; */
+    /* line-height: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.ctrlPie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+.ctrlPie input{
+    width: 100%;
+    margin: 10px 0;
+}
+.inputPie .input{
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputPie label{
+    margin-right: 10px;
+}
