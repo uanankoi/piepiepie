@@ -1,9 +1,7 @@
 body{
-    /* background-image: linear-gradient(45deg,pink,teal); */
-    /* background-color: darksalmon; */
     background-color: rgb(8, 199, 199);
 }
-/*  */
+/* bar */
 .bar{
     width: 100vw;
     height: 60px;
@@ -12,15 +10,14 @@ body{
     top: 0;
     box-shadow: 0 0 6px slategrey;
     z-index: 100;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: ivory;
 }
-/*  */
+/* wrap */
 .wrap{
     width: 100%;
     background-color: rgb(8, 199, 199);
-    /* height: 100vh; */
-    /* background-color: darksalmon; */
-    /* background-image: linear-gradient(45deg,rgb(160, 89, 101) ,rgb(8, 199, 199)); */
-
 }
 .title{
     width: 100%;
@@ -29,22 +26,71 @@ body{
     margin-top: 60px;
     text-align: center;
     padding: 50px 0;
+    color: ivory;
 }
 .allPie{
-    /* border: darkorange 1px solid; */
     width: 900px;
     margin: 0 auto;
-    display: flex;
-    /* background-color: rgb(175, 175, 175); */
+    display: flex; 
 }
 .allPie h1{
     width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    color: ivory;
+    text-align: center;
 }
+.allPie h1::after{
+    content: '';
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+.arrayPie .choice{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.arrayPie .data{
+    width: 60%;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px auto;
+    background-color: rgb(226, 255, 245);
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px gray;
+    cursor: pointer;
+    font-weight: 800;
+}
+.ctrlPie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+.ctrlPie input{
+    width: 100%;
+    margin: 10px 0;
+}
+.inputPie .input{
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputPie label{
+    margin-right: 10px;
+}
+/* pie,col4,active */
 .col4{
     width: 30%;
     margin: 0 1%;
     height: 100%;
-    /* background-image: linear-gradient(45deg,pink,teal); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -81,8 +127,6 @@ body{
     border-radius: 50%;
     background-color: rgba(255, 255, 255);
     font-size: 1.5rem;
-    /* text-align: center; */
-    /* line-height: 70px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,23 +135,8 @@ body{
     transform: translate(-50%,-50%);
     position: absolute;
 }
-.ctrlPie{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100px;
-}
-.ctrlPie input{
-    width: 100%;
-    margin: 10px 0;
-}
-.inputPie .input{
-    width: 100%;
-    margin: 5px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.inputPie label{
-    margin-right: 10px;
+.active{
+    border: 2px coral solid;
+    box-sizing: border-box;
+    color: rgb(201, 57, 38);
 }
