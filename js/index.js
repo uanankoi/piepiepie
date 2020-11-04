@@ -95,11 +95,11 @@ function counter(el){
 
 // 
 let data3 = [
-{num:55,color:"gold",size:150},
-{num:35.8,color:"pink",size:200},
-{num:92.75,color:"teal",size:80},
-{num:77.15,color:"turquoise",size:120},
-{num:16.7,color:"yellowgreen",size:100}];
+{num:55,color:"teal",size:200},
+{num:35.8,color:"pink",size:160},
+{num:92.75,color:"gold",size:120},
+{num:77.15,color:"turquoise",size:100},
+{num:16.7,color:"yellowgreen",size:80}];
 // console.log(data3[0].num);
 
 // data3.forEach(el=>arrPie(arrayPie,el.num,el.color,el.size))
@@ -107,7 +107,7 @@ let data3 = [
 // 
 let dataBtn = document.querySelectorAll('.data');
 
-console.log(dataBtn);
+// console.log(dataBtn);
 
 dataBtn.forEach(el=>el.addEventListener('click',choiceData));
 
@@ -198,6 +198,7 @@ data2.forEach(el=>inPie(inputPie,el));
 
 
 function inPie(elm,number){
+    console.log(number);
     if(number>100){
         return false;
     }
@@ -219,11 +220,12 @@ function inPie(elm,number){
 
     let run = setInterval(() => {
         
-        cou++;
+        
         if(cou===Math.round(num)){
           cou = num;
           clearInterval(run);
         }
+        
 
         if(cou<51){
             // div.children[1].style.transition="1s ease-in-out";    
@@ -238,6 +240,8 @@ function inPie(elm,number){
             div.children[1].style.backgroundColor="transparent";
             div.children[2].innerText=`${cou}%`;
         } 
+
+        cou++;
 
 
 
@@ -257,7 +261,7 @@ inputNum.addEventListener('change',function(){
         return false;
     }
     let pie = document.querySelectorAll('.inputPie .pie');
-    console.log(pie);
+    // console.log(pie);
     inputPie.removeChild(pie[3]);
     inPie(inputPie,inputNum.value);
 })

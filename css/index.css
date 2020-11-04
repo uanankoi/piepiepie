@@ -18,6 +18,8 @@ body{
 .wrap{
     width: 100%;
     background-color: rgb(8, 199, 199);
+    background-image: url(../img/back.png);
+    /* background-size: 150%; */
 }
 .title{
     width: 100%;
@@ -66,6 +68,12 @@ body{
     cursor: pointer;
     font-weight: 800;
 }
+.dataPie{
+    text-align: center;
+}
+.controlPie{
+
+}
 .ctrlPie{
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +95,7 @@ body{
     margin-right: 10px;
 }
 /* pie,col4,active */
-.col4{
+.col4-l{
     width: 30%;
     margin: 0 1%;
     height: 100%;
@@ -139,4 +147,60 @@ body{
     border: 2px coral solid;
     box-sizing: border-box;
     color: rgb(201, 57, 38);
+}
+
+@media (max-width:920px){
+    /* bar */
+    .bar{
+        color: rgb(202, 49, 49);
+    }
+    /*  */
+    .allPie{
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+    .allPie h1{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    /*  */
+    .col4-l{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        display: block;
+    }
+    /* .col4-l{
+        width: 30%;
+        margin: 0 1%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .pie{
+        margin: 5px auto;
+    }
+    /* .pie{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgb(32, 139, 182);
+        background-image: linear-gradient(90deg,transparent 50%, tomato 0);
+        position: relative;
+        margin: 5px;
+    } */
+    .ctrlPie{
+        margin: 0 auto;
+    }
+    /* .ctrlPie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100px;
+    } */
+    .inputPie .input{
+        margin: 15px 0;
+    }
+
 }
